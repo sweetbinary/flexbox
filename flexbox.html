@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox - sweet binary</title>
+    <meta name="description" content="">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+
+<body class="">
+
+    <div class="wrapper-article">
+        <article class="article-flexbox js-article-flexbox">
+
+    <p class="select no-of-cells">  
+            <label for="dropDown1">cells:</label>
+            <select id="dropDown1" class="js-no-of-cells">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4" selected="selected">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </p>
+
+<!-- flex-direction- flex-wrap- flex-flow- justify-content- align-items- align-content-->
+            <div class="flexbox-container js-flexbox-container">
+
+            </div>
+
+            <div class="flexbox-css js-flexbox-css">
+                <span></span>
+                <button class="flexbox-button">>></button>
+            </div>
+            <div class="grid-row js-flexbox-form flexbox-controls">                
+                <div class="col col-1-1 col-s-1-2 col-m-1-3 col-l-1-5 flexbox-form-col js-flexbox-form-col">
+                    <div class="col-content no-border no-padding">
+                        <h2>flex-direction</h2>
+                        <p class="radio">
+                            <input name="flex-direction" id="flex-direction-row" type="radio">
+                            <label for="flex-direction-row">row</label>
+                        </p>
+                        <p class="radio">
+                            <input name="flex-direction" id="flex-direction-row-reverse" type="radio">
+                            <label for="flex-direction-row-reverse">row-reverse</label>
+                        </p>
+                        <p class="radio">
+                            <input name="flex-direction" id="flex-direction-column" type="radio">
+                            <label for="flex-direction-column">column</label>
+                        </p>
+                        <p class="radio">
+                            <input name="flex-direction" id="flex-direction-column-reverse" type="radio">
+                            <label for="flex-direction-column-reverse">column-reverse</label>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col col-1-1 col-s-1-2 col-m-1-3 col-l-1-5 flexbox-form-col js-flexbox-form-col">
+                    <div class="col-content no-border no-padding">
+                        <h2>flex-wrap</h2>
+                        <p class="radio">
+                            <input name="flex-wrap" id="flex-wrap-nowrap" type="radio">
+                            <label for="flex-wrap-nowrap">nowrap</label>
+                        </p>
+                        <p class="radio">
+                            <input name="flex-wrap" id="flex-wrap-wrap" type="radio">
+                            <label for="flex-wrap-wrap">wrap</label>
+                        </p>
+                        <p class="radio">
+                            <input name="flex-wrap" id="flex-wrap-wrap-reverse" type="radio">
+                            <label for="flex-wrap-wrap-reverse">wrap-reverse</label>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col col-1-1 col-s-1-2 col-m-1-3 col-l-1-5 flexbox-form-col js-flexbox-form-col">
+                    <div class="col-content no-border no-padding">
+                        <h2>justify-content</h2>
+                        <p class="radio">
+                            <input name="justify-content" id="justify-content-flex-start" type="radio">
+                            <label for="justify-content-flex-start">flex-start</label>
+                        </p>
+                        <p class="radio">
+                            <input name="justify-content" id="justify-content-flex-end" type="radio">
+                            <label for="justify-content-flex-end">flex-end</label>
+                        </p>
+                        <p class="radio">
+                            <input name="justify-content" id="justify-content-center" type="radio">
+                            <label for="justify-content-center">center</label>
+                        </p>
+                        <p class="radio">
+                            <input name="justify-content" id="justify-content-space-between" type="radio">
+                            <label for="justify-content-space-between">space-between</label>
+                        </p>
+                        <p class="radio">
+                            <input name="justify-content" id="justify-content-space-around" type="radio">
+                            <label for="justify-content-space-around">space-around</label>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col col-1-1 col-s-1-2 col-m-1-3 col-l-1-5 flexbox-form-col js-flexbox-form-col">
+                    <div class="col-content no-border no-padding">
+                        <h2>align-items</h2>
+                        <p class="radio">
+                            <input name="align-items" id="align-items-flex-start" type="radio">
+                            <label for="align-items-flex-start">flex-start</label>
+                        </p>
+                        <p class="radio">
+                            <input name="align-items" id="align-items-flex-end" type="radio">
+                            <label for="align-items-flex-end">flex-end</label>
+                        </p>
+                        <p class="radio">
+                            <input name="align-items" id="align-items-center" type="radio">
+                            <label for="align-items-center">center</label>
+                        </p>
+                        <p class="radio">
+                            <input name="align-items" id="align-items-baseline" type="radio">
+                            <label for="align-items-baseline">baseline</label>
+                        </p>
+                        <p class="radio">
+                            <input name="align-items" id="align-items-stretch" type="radio">
+                            <label for="align-items-stretch">stretch</label>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col col-1-1 col-s-1-2 col-m-1-3 col-l-1-5 flexbox-form-col js-flexbox-form-col">
+                    <div class="col-content no-border no-padding">
+                        <h2>align-content</h2>
+                        <p class="radio">
+                            <input name="align-content" id="align-content-flex-start" type="radio">
+                            <label for="align-content-flex-start">flex-start</label>
+                        </p>
+                        <p class="radio">
+                            <input name="align-content" id="align-content-flex-end" type="radio">
+                            <label for="align-content-flex-end">flex-end</label>
+                        </p>
+                        <p class="radio">
+                            <input name="align-content" id="align-content-center" type="radio">
+                            <label for="align-content-center">center</label>
+                        </p>
+                        <p class="radio">
+                            <input name="align-content" id="align-content-space-between" type="radio">
+                            <label for="align-content-space-between">space-between</label>
+                        </p>
+                        <p class="radio">
+                            <input name="align-content" id="align-content-space-around" type="radio">
+                            <label for="align-content-space-around">space-around</label>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </article>
+    </div>
+
+
+
+
+    <script>
+
+        $(document).ready(function () {
+            init_flexbox_form();
+        });
+
+
+    </script>
+
+    <div class="flexbox-cell-example js-flexbox-cell-example">
+        <div class="flexbox-cell">
+            ###. XXX
+            <br /><br />
+            <p class="text">
+                order:<input class="input-for-order js-input-for-order" type="text" />;
+            </p>
+            <br /><br />
+            <p class="text">
+                width:<input class="input-for-width js-input-for-width" type="text" />;
+            </p>
+            <br /><br />
+            <p class="text">
+                height:<input class="input-for-height js-input-for-height" type="text" />;
+            </p>
+            <br /><br />
+            <p class="text">
+                flex:<input class="input-for-flex js-input-for-flex" type="text" />;
+                <span class="note">(flex-grow<br />flex-shrink<br />flex-basis)<br />(0 1 auto)</span>
+            </p>
+            <br /><br />
+            <p class="select">  
+                <label>align-self:</label>
+                <select class="align-self-select js-align-self-select">
+                    <option value="0"></option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>                    
+                    <option value="baseline">baseline</option>
+                    <option value="stretch">stretch</option>
+                </select>
+            </p>
+            <br /><br />
+            <span class="style-dump">
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>
